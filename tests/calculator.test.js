@@ -4,7 +4,7 @@ const app = require('../app');
 describe("Test if frontend server works", () => {
     test("It should respond with statuscode 200", async () => {
       const response = await request(app).get("/");
-      expect(response.statusCode).toBe(404);
+      expect(response.statusCode).toBe(200);
     });
 });
 
